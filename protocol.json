@@ -1,0 +1,13 @@
+{
+  "id":"QW-CORE01-20261017",
+  "model":"neutral H3 ground doublet BO LSTH, ordered collinear sector",
+  "source_commit":"73f2ef3d322b253a4ef39e08216261bd974180f6",
+  "license":"MIT, original source header retained",
+  "units":"bohr, Hartree, atomic time; nuclear proton mass convention",
+  "not_used":"76 unqualified H3 scan points; no static interpolation",
+  "resources":{"jobs":1,"attempts":1,"minutes":15,"cpu":1,"memory_GiB":1,"threads":1,"network_science":"none","paid_resources":0},
+  "experiments":{"energy_eV":[0.2,0.6,1.0],"tmax_au":2000,"dt":0.5,"grid":256,"length_bohr":14,"lower_bohr":0.4},
+  "checks":{"upstream_energy_tolerance_Eh":1e-10,"analytic_gaussian_moments":1e-8,"closed_norm":1e-9,"closed_energy_drift_Eh":1e-6,"CAP_balance":1e-9,"dt_product_absolute":0.001,"grid_product_absolute":0.01},
+  "boundaries":["periodic spectral box with physical repulsive short-range region; check boundary population","CAP only at large separations, loss is not automatically reactive flux","regional populations not asymptotic scattering probabilities","no nonadiabatic/3D rotational/full electronic time dynamics","Scene01 original attachment not available; not claimed read"],
+  "historical_statuses_unchanged":{"E01-C":"NO-GO","E01-C2":"NO-GO","NUMERICAL_SOLVER_QUALIFIED":"INCOMPLETE","H2_PHYSICAL_BASELINE":"NOT_QUALIFIED","ORIGINAL_DISCOVERY_CAPABILITY":"NOT_TESTED"}
+}

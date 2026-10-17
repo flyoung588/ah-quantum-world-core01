@@ -1,0 +1,23 @@
+{
+  "four_step_actual_Python_JS_error": 7.216449660063518e-14,
+  "observation": {
+    "model_id": "1fa07669fa4fe9cbc802432ce77ed0db0f09574baa93196f35de7cbf02973c1b",
+    "time_au": 0.2,
+    "time_fs": 0.004837768653171401,
+    "norm": 1.0000000000000058,
+    "absorbed": 0,
+    "probability_balance": 1.0000000000000058,
+    "energy_Eh": -0.596978856132659,
+    "Pg": 1.000000000000006,
+    "Pu": 3.5233764370145395e-19,
+    "mean_R": 2.0691150862647296,
+    "coherence_gu": [
+      -1.3273995191109282e-11,
+      -5.918461681279279e-10
+    ],
+    "electric_field_au": -7.791361215896667e-9,
+    "work_input_Eh": -6.626182818220558e-20
+  },
+  "pass": true,
+  "visual_rendering": "NOT_RUN"
+}

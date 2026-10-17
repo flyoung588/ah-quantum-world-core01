@@ -1,0 +1,41 @@
+{
+  "time_step_half": {
+    "final_Pu_difference": 3.66587767135218e-07,
+    "mean_R_difference": 6.41079915375542e-07,
+    "work_energy_error_Eh": -2.6888432806682072e-08
+  },
+  "radial_grid_doubled": {
+    "final_Pu_difference": -9.629354206369678e-10,
+    "mean_R_difference": -2.255040598697633e-09,
+    "work_energy_error_Eh": -1.075516274226182e-07
+  },
+  "electronic_interpolation_coarsened": {
+    "final_Pu_difference": -9.37434928294234e-09,
+    "mean_R_difference": -3.992050237489053e-06,
+    "work_energy_error_Eh": -1.0755159789588992e-07
+  },
+  "larger_basis": {
+    "final_Pu_difference": -2.3601338225813506e-06,
+    "mean_R_difference": -0.00240090281835581,
+    "work_energy_error_Eh": -1.0755647673280772e-07
+  },
+  "actual_electronic_potential_dipole_checks": {
+    "Vg_Eh": {
+      "larger_basis_max_absolute_difference": 0.0018395126764729763,
+      "at_R_bohr": 0.7,
+      "coarse_spline_vs_held_out_actual_AO_points_max_error": 0.00019034039991730478
+    },
+    "Vu_Eh": {
+      "larger_basis_max_absolute_difference": 0.00031874591429459365,
+      "at_R_bohr": 1.45,
+      "coarse_spline_vs_held_out_actual_AO_points_max_error": 0.00018629868402186833
+    },
+    "mu_gu_au": {
+      "larger_basis_max_absolute_difference": 0.0009270659955605831,
+      "at_R_bohr": 0.7,
+      "coarse_spline_vs_held_out_actual_AO_points_max_error": 2.774393733862013e-06
+    }
+  },
+  "baseline_work_energy_error_Eh": -1.075516419535294e-07,
+  "basis_interpolation_differences_are_not_rigorous_error_bounds": true
+}

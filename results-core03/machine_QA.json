@@ -1,0 +1,11 @@
+{
+  "zero_field_decoupled": "PASS",
+  "real_field_transfer": "PASS",
+  "probability_balance": "PASS",
+  "fixed_R_analytic": "PASS",
+  "Core02_short_compatibility": "PASS",
+  "checkpoint": "PASS",
+  "physical_accuracy": "NOT_CERTIFIED",
+  "visual_QA": "NOT_RUN",
+  "classification": "PROGRAMMATIC_EXPERIMENT"
+}

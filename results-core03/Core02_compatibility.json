@@ -1,0 +1,10 @@
+{
+  "H2": {
+    "four_step_state_error": 0.0,
+    "not_full_historical_experiment": true
+  },
+  "H3": {
+    "four_step_state_error": 0.0,
+    "not_full_historical_experiment": true
+  }
+}

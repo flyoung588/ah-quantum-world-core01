@@ -1,0 +1,14 @@
+{
+  "R_bohr": 2.0,
+  "physical_mu_gu_au": 1.049978014529001,
+  "Vg_Eh": -0.6023017076744428,
+  "Vu_Eh": -0.1672061656577537,
+  "constant_field_au": 0.004,
+  "time_au": 123.0,
+  "computed_Pu": 0.00037123937552504594,
+  "analytic_Pu": 0.00037123937552504545,
+  "absolute_error": 4.87890977618477e-19,
+  "alternate_expm_max_error": 6.473657049138937e-16,
+  "Hermiticity_error": 0.0,
+  "meaning": "exact detuned constant-H two-level oscillation; not resonant-CW RWA, not independent dipole validation"
+}

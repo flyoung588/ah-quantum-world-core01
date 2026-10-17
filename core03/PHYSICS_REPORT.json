@@ -1,0 +1,315 @@
+{
+  "classification": "PROGRAMMATIC_EXPERIMENT",
+  "Q1": "YES within two-channel fixed-axis BO model, coherent nuclear TDSE actually propagated",
+  "Q2": "YES actual midpoint electronic -r AO matrix elements, not fitted coupling; external accuracy of dipole NOT independently certified",
+  "Q3": {
+    "A_zero_field": {
+      "model_id": "1fa07669fa4fe9cbc802432ce77ed0db0f09574baa93196f35de7cbf02973c1b",
+      "time_au": 240.00000000002032,
+      "time_fs": 5.805322383806172,
+      "norm": 1.0000000000020075,
+      "absorbed": 0.0,
+      "probability_balance": 1.0000000000020075,
+      "energy_Eh": -0.5969788561287742,
+      "work_input_Eh": 0.0,
+      "Pg": 1.0000000000020073,
+      "Pu": 0.0,
+      "mean_R": 2.0672239910971886,
+      "coherence_gu": [
+        0.0,
+        0.0
+      ],
+      "electric_field_au": 0.0,
+      "edge_probability": 9.058784665099282e-09,
+      "channel_names": [
+        "1s sigma_g",
+        "2p sigma_u"
+      ]
+    },
+    "B_driven": {
+      "model_id": "1fa07669fa4fe9cbc802432ce77ed0db0f09574baa93196f35de7cbf02973c1b",
+      "time_au": 240.00000000002032,
+      "time_fs": 5.805322383806172,
+      "norm": 1.0000000000020912,
+      "absorbed": 0.0,
+      "probability_balance": 1.0000000000020912,
+      "energy_Eh": -0.5915213388209822,
+      "work_input_Eh": 0.005457624863318383,
+      "Pg": 0.987421777707071,
+      "Pu": 0.012578222295020158,
+      "mean_R": 2.089296358187162,
+      "coherence_gu": [
+        0.0010934801051325532,
+        0.00047883520040496914
+      ],
+      "electric_field_au": 0.0,
+      "edge_probability": 9.029787268030459e-09,
+      "channel_names": [
+        "1s sigma_g",
+        "2p sigma_u"
+      ]
+    },
+    "C_amplitude_branch": {
+      "model_id": "1fa07669fa4fe9cbc802432ce77ed0db0f09574baa93196f35de7cbf02973c1b",
+      "time_au": 240.00000000002032,
+      "time_fs": 5.805322383806172,
+      "norm": 1.000000000002077,
+      "absorbed": 0.0,
+      "probability_balance": 1.000000000002077,
+      "energy_Eh": -0.5942930380401371,
+      "work_input_Eh": 0.002685871014144825,
+      "Pg": 0.993809256075851,
+      "Pu": 0.006190743926225847,
+      "mean_R": 2.078075220547506,
+      "coherence_gu": [
+        0.0007654334649012115,
+        0.00033926060173822536
+      ],
+      "electric_field_au": 0.0,
+      "edge_probability": 9.044564715966251e-09,
+      "channel_names": [
+        "1s sigma_g",
+        "2p sigma_u"
+      ]
+    }
+  },
+  "Q4": {
+    "H2": {
+      "four_step_state_error": 0.0,
+      "not_full_historical_experiment": true
+    },
+    "H3": {
+      "four_step_state_error": 0.0,
+      "not_full_historical_experiment": true
+    }
+  },
+  "Q5": "Missing higher electronic states/ionization, intrinsic derivative couplings and Born-Huang corrections, rotation, multi-electron spin interactions, independent dipole benchmarks and physical experiments. No original discovery or autonomous discovery claim.",
+  "numerical_sensitivity": {
+    "time_step_half": {
+      "final_Pu_difference": 3.66587767135218e-07,
+      "mean_R_difference": 6.41079915375542e-07,
+      "work_energy_error_Eh": -2.6888432806682072e-08
+    },
+    "radial_grid_doubled": {
+      "final_Pu_difference": -9.629354206369678e-10,
+      "mean_R_difference": -2.255040598697633e-09,
+      "work_energy_error_Eh": -1.075516274226182e-07
+    },
+    "electronic_interpolation_coarsened": {
+      "final_Pu_difference": -9.37434928294234e-09,
+      "mean_R_difference": -3.992050237489053e-06,
+      "work_energy_error_Eh": -1.0755159789588992e-07
+    },
+    "larger_basis": {
+      "final_Pu_difference": -2.3601338225813506e-06,
+      "mean_R_difference": -0.00240090281835581,
+      "work_energy_error_Eh": -1.0755647673280772e-07
+    },
+    "actual_electronic_potential_dipole_checks": {
+      "Vg_Eh": {
+        "larger_basis_max_absolute_difference": 0.0018395126764729763,
+        "at_R_bohr": 0.7,
+        "coarse_spline_vs_held_out_actual_AO_points_max_error": 0.00019034039991730478
+      },
+      "Vu_Eh": {
+        "larger_basis_max_absolute_difference": 0.00031874591429459365,
+        "at_R_bohr": 1.45,
+        "coarse_spline_vs_held_out_actual_AO_points_max_error": 0.00018629868402186833
+      },
+      "mu_gu_au": {
+        "larger_basis_max_absolute_difference": 0.0009270659955605831,
+        "at_R_bohr": 0.7,
+        "coarse_spline_vs_held_out_actual_AO_points_max_error": 2.774393733862013e-06
+      }
+    },
+    "baseline_work_energy_error_Eh": -1.075516419535294e-07,
+    "basis_interpolation_differences_are_not_rigorous_error_bounds": true
+  },
+  "reference_gap_max_error_Eh": 0.0005720529746815473,
+  "reference_point_R2": {
+    "R_bohr": 2.0,
+    "E0_Ry": 0.2298313933,
+    "gap_Ry": 0.8701996446,
+    "reference_gap_Eh": 0.4350998223,
+    "computed_gap_Eh": 0.4350955420166891,
+    "difference_Eh": -4.280283310897914e-06,
+    "reference_Vg_Eh": -0.6026342145,
+    "reference_Vu_Eh": -0.1675343922,
+    "computed_Vg_Eh": -0.6023017076744428,
+    "computed_Vu_Eh": -0.1672061656577537
+  },
+  "reference_scope": "table numerical energy data converted Ry to Eh; not independent TDSE/dipole benchmark",
+  "raw_matrix_rechecks": [
+    {
+      "basis": "aug-cc-pVTZ",
+      "points": 227,
+      "AO_count": 46,
+      "max_eigen_residual_Eh": 1.1542991895045678e-12,
+      "min_adjacent_overlap": 0.9998249847597445,
+      "raw_matrix_rechecks": [
+        {
+          "file": "aug-cc-pVTZ/AO_R1.0.npz",
+          "C_S_C_error": 3.6637359812630166e-15,
+          "dipole_record_error": 0.0,
+          "electronic_h_offdiag": 1.2480158147263239e-16
+        },
+        {
+          "file": "aug-cc-pVTZ/AO_R10.0.npz",
+          "C_S_C_error": 3.3306690738754696e-16,
+          "dipole_record_error": 0.0,
+          "electronic_h_offdiag": 3.766126608689041e-16
+        },
+        {
+          "file": "aug-cc-pVTZ/AO_R2.0.npz",
+          "C_S_C_error": 6.3567849993513e-16,
+          "dipole_record_error": 2.220446049250313e-16,
+          "electronic_h_offdiag": 3.4231893795255363e-16
+        },
+        {
+          "file": "aug-cc-pVTZ/AO_R3.0.npz",
+          "C_S_C_error": 3.3306690738754696e-16,
+          "dipole_record_error": 6.661338147750939e-16,
+          "electronic_h_offdiag": 1.0750767182032104e-16
+        },
+        {
+          "file": "aug-cc-pVTZ/AO_R4.0.npz",
+          "C_S_C_error": 4.440892098500626e-16,
+          "dipole_record_error": 0.0,
+          "electronic_h_offdiag": 1.0327149234140084e-16
+        },
+        {
+          "file": "aug-cc-pVTZ/AO_R6.0.npz",
+          "C_S_C_error": 6.661338147750939e-16,
+          "dipole_record_error": 4.440892098500626e-16,
+          "electronic_h_offdiag": 1.0410592437255783e-16
+        },
+        {
+          "file": "aug-cc-pVTZ/AO_R8.0.npz",
+          "C_S_C_error": 1.1102230246251565e-16,
+          "dipole_record_error": 4.440892098500626e-16,
+          "electronic_h_offdiag": 4.008245686611322e-16
+        }
+      ]
+    },
+    {
+      "basis": "aug-cc-pVQZ",
+      "points": 227,
+      "AO_count": 92,
+      "max_eigen_residual_Eh": 9.657630225716292e-13,
+      "min_adjacent_overlap": 0.999823746630165,
+      "raw_matrix_rechecks": [
+        {
+          "file": "aug-cc-pVQZ/AO_R1.0.npz",
+          "C_S_C_error": 2.4424906541753444e-15,
+          "dipole_record_error": 1.1102230246251565e-16,
+          "electronic_h_offdiag": 2.689461643935719e-16
+        },
+        {
+          "file": "aug-cc-pVQZ/AO_R10.0.npz",
+          "C_S_C_error": 1.5543122344752192e-15,
+          "dipole_record_error": 8.881784197001252e-16,
+          "electronic_h_offdiag": 1.9330415987198042e-16
+        },
+        {
+          "file": "aug-cc-pVQZ/AO_R2.0.npz",
+          "C_S_C_error": 5.551115123125783e-16,
+          "dipole_record_error": 0.0,
+          "electronic_h_offdiag": 3.7100688869337626e-16
+        },
+        {
+          "file": "aug-cc-pVQZ/AO_R3.0.npz",
+          "C_S_C_error": 1.1102230246251565e-15,
+          "dipole_record_error": 6.661338147750939e-16,
+          "electronic_h_offdiag": 1.349818401053899e-15
+        },
+        {
+          "file": "aug-cc-pVQZ/AO_R4.0.npz",
+          "C_S_C_error": 6.661338147750939e-16,
+          "dipole_record_error": 0.0,
+          "electronic_h_offdiag": 1.1131267068249313e-15
+        },
+        {
+          "file": "aug-cc-pVQZ/AO_R6.0.npz",
+          "C_S_C_error": 8.881784197001252e-16,
+          "dipole_record_error": 4.440892098500626e-16,
+          "electronic_h_offdiag": 1.561603404763304e-15
+        },
+        {
+          "file": "aug-cc-pVQZ/AO_R8.0.npz",
+          "C_S_C_error": 1.4344692045511797e-15,
+          "dipole_record_error": 4.440892098500626e-16,
+          "electronic_h_offdiag": 4.60003141688851e-16
+        }
+      ]
+    }
+  ],
+  "QA": {
+    "zero_field_decoupled": "PASS",
+    "real_field_transfer": "PASS",
+    "probability_balance": "PASS",
+    "fixed_R_analytic": "PASS",
+    "Core02_short_compatibility": "PASS",
+    "checkpoint": "PASS",
+    "physical_accuracy": "NOT_CERTIFIED",
+    "visual_QA": "NOT_RUN",
+    "classification": "PROGRAMMATIC_EXPERIMENT"
+  },
+  "browser_numeric_QA": {
+    "four_step_actual_Python_JS_error": 7.216449660063518e-14,
+    "observation": {
+      "model_id": "1fa07669fa4fe9cbc802432ce77ed0db0f09574baa93196f35de7cbf02973c1b",
+      "time_au": 0.2,
+      "time_fs": 0.004837768653171401,
+      "norm": 1.0000000000000058,
+      "absorbed": 0,
+      "probability_balance": 1.0000000000000058,
+      "energy_Eh": -0.596978856132659,
+      "Pg": 1.000000000000006,
+      "Pu": 3.5233764370145395e-19,
+      "mean_R": 2.0691150862647296,
+      "coherence_gu": [
+        -1.3273995191109282e-11,
+        -5.918461681279279e-10
+      ],
+      "electric_field_au": -7.791361215896667e-09,
+      "work_input_Eh": -6.626182818220558e-20
+    },
+    "pass": true,
+    "visual_rendering": "NOT_RUN"
+  },
+  "visualization": "Standalone actual-data-bound view built; visual rendering NOT_RUN. Browser numeric parity is four short steps only, not full browser trajectory certification. Channel probabilities are not a 3D electron density.",
+  "boundary_scope": "No CAP, finite interval 0.7..12 bohr Dirichlet; grid sensitivity holds interval fixed, not infinite-domain convergence proof. Max recorded edge probability about 7.08e-8; no dissociation yield claim.",
+  "resources": {
+    "wall_seconds": 18.259849892999995,
+    "cpu_user": 18.5637,
+    "cpu_system": 0.27788999999999997,
+    "maxrss_KiB": 141956,
+    "cgroup": {
+      "memory.max": "1073741824",
+      "memory.current": "86683648",
+      "memory.peak": "118378496",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "memory.swap.max": "0",
+      "cpu.max": "100000 100000",
+      "cpu.stat": "usage_usec 18989172\nuser_usec 18689295\nsystem_usec 299876\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 190\nnr_throttled 4\nthrottled_usec 2840\nnr_bursts 0\nburst_usec 0"
+    }
+  },
+  "resource_scope": "1CPU/1GiB/one thread applies to science container. Standard runner preparation outside container; entire job 60 seconds within 15min. cgroup memory.peak and process ru_maxrss differ by accounting scope; retain both.",
+  "historical_status": {
+    "E01-C": "NO-GO",
+    "E01-C2": "NO-GO",
+    "TEST-A": "PARTIAL_NOT_CERTIFIED",
+    "TEST-B": "NOT_RUN",
+    "TEST-C": "NOT_RUN",
+    "NUMERICAL_SOLVER_QUALIFIED": "INCOMPLETE",
+    "H2_PHYSICAL_BASELINE": "NOT_QUALIFIED",
+    "ORIGINAL_DISCOVERY_CAPABILITY": "NOT_TESTED"
+  },
+  "scientific_review": "B-Chat pending; no automatic Core04",
+  "reference_urls": [
+    "https://arxiv.org/html/1705.03608v2",
+    "https://pyscf.org/user/gto.html",
+    "https://pyscf.org/_modules/pyscf/gto/moleintor.html"
+  ],
+  "cost_basis": "Public standard Ubuntu runner, no Actions artifacts/cache/Packages; logs excluded from artifact storage per GitHub billing docs. No invoice audit."
+}

@@ -1,0 +1,78 @@
+{
+  "comparison": {
+    "first": {
+      "model_id": "1fa07669fa4fe9cbc802432ce77ed0db0f09574baa93196f35de7cbf02973c1b",
+      "time_au": 240.00000000002032,
+      "time_fs": 5.805322383806172,
+      "norm": 1.0000000000020912,
+      "absorbed": 0.0,
+      "probability_balance": 1.0000000000020912,
+      "energy_Eh": -0.5915213388209822,
+      "work_input_Eh": 0.005457624863318383,
+      "Pg": 0.987421777707071,
+      "Pu": 0.012578222295020158,
+      "mean_R": 2.089296358187162,
+      "coherence_gu": [
+        0.0010934801051325532,
+        0.00047883520040496914
+      ],
+      "electric_field_au": 0.0,
+      "edge_probability": 9.029787268030459e-09,
+      "channel_names": [
+        "1s sigma_g",
+        "2p sigma_u"
+      ]
+    },
+    "second": {
+      "model_id": "1fa07669fa4fe9cbc802432ce77ed0db0f09574baa93196f35de7cbf02973c1b",
+      "time_au": 240.00000000002032,
+      "time_fs": 5.805322383806172,
+      "norm": 1.000000000002077,
+      "absorbed": 0.0,
+      "probability_balance": 1.000000000002077,
+      "energy_Eh": -0.5942930380401371,
+      "work_input_Eh": 0.002685871014144825,
+      "Pg": 0.993809256075851,
+      "Pu": 0.006190743926225847,
+      "mean_R": 2.078075220547506,
+      "coherence_gu": [
+        0.0007654334649012115,
+        0.00033926060173822536
+      ],
+      "electric_field_au": 0.0,
+      "edge_probability": 9.044564715966251e-09,
+      "channel_names": [
+        "1s sigma_g",
+        "2p sigma_u"
+      ]
+    },
+    "state_L2": 0.03381419049787692,
+    "same_time": true
+  },
+  "same_prepared_source": true,
+  "changed_parameter_only": "amplitude_au",
+  "zero_field_final": {
+    "model_id": "1fa07669fa4fe9cbc802432ce77ed0db0f09574baa93196f35de7cbf02973c1b",
+    "time_au": 240.00000000002032,
+    "time_fs": 5.805322383806172,
+    "norm": 1.0000000000020075,
+    "absorbed": 0.0,
+    "probability_balance": 1.0000000000020075,
+    "energy_Eh": -0.5969788561287742,
+    "work_input_Eh": 0.0,
+    "Pg": 1.0000000000020073,
+    "Pu": 0.0,
+    "mean_R": 2.0672239910971886,
+    "coherence_gu": [
+      0.0,
+      0.0
+    ],
+    "electric_field_au": 0.0,
+    "edge_probability": 9.058784665099282e-09,
+    "channel_names": [
+      "1s sigma_g",
+      "2p sigma_u"
+    ]
+  },
+  "no_shared_mutable_pulse": true
+}

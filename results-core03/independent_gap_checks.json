@@ -1,0 +1,102 @@
+{
+  "checks": [
+    {
+      "R_bohr": 1.0,
+      "E0_Ry": 0.9834000615,
+      "gap_Ry": 1.7739453766,
+      "reference_gap_Eh": 0.8869726883,
+      "computed_gap_Eh": 0.8864006353253184,
+      "difference_Eh": -0.0005720529746815473,
+      "reference_Vg_Eh": -0.4517863134,
+      "reference_Vu_Eh": 0.4351863749,
+      "computed_Vg_Eh": -0.45083650741700754,
+      "computed_Vu_Eh": 0.4355641279083109
+    },
+    {
+      "R_bohr": 2.0,
+      "E0_Ry": 0.2298313933,
+      "gap_Ry": 0.8701996446,
+      "reference_gap_Eh": 0.4350998223,
+      "computed_gap_Eh": 0.4350955420166891,
+      "difference_Eh": -4.280283310897914e-06,
+      "reference_Vg_Eh": -0.6026342145,
+      "reference_Vu_Eh": -0.1675343922,
+      "computed_Vg_Eh": -0.6023017076744428,
+      "computed_Vu_Eh": -0.1672061656577537
+    },
+    {
+      "R_bohr": 3.0,
+      "E0_Ry": 0.0543521359,
+      "gap_Ry": 0.418955728,
+      "reference_gap_Eh": 0.209477864,
+      "computed_gap_Eh": 0.209424772786948,
+      "difference_Eh": -5.3091213052025577e-05,
+      "reference_Vg_Eh": -0.57756286405,
+      "reference_Vu_Eh": -0.36808500005,
+      "computed_Vg_Eh": -0.5772534721474709,
+      "computed_Vu_Eh": -0.3678286993605229
+    },
+    {
+      "R_bohr": 4.0,
+      "E0_Ry": 0.0083644769,
+      "gap_Ry": 0.2010684887,
+      "reference_gap_Eh": 0.10053424435,
+      "computed_gap_Eh": 0.10039777375607606,
+      "difference_Eh": -0.00013647059392393746,
+      "reference_Vg_Eh": -0.546084883725,
+      "reference_Vu_Eh": -0.445550639375,
+      "computed_Vg_Eh": -0.5457199675602671,
+      "computed_Vu_Eh": -0.445322193804191
+    },
+    {
+      "R_bohr": 5.0,
+      "E0_Ry": -0.0017119084,
+      "gap_Ry": 0.0942573639,
+      "reference_gap_Eh": 0.04712868195,
+      "computed_gap_Eh": 0.047013130144786086,
+      "difference_Eh": -0.00011555180521391484,
+      "reference_Vg_Eh": -0.524420295175,
+      "reference_Vu_Eh": -0.47729161322499997,
+      "computed_Vg_Eh": -0.5240861249713138,
+      "computed_Vu_Eh": -0.4770729948265277
+    },
+    {
+      "R_bohr": 6.0,
+      "E0_Ry": -0.0026129408,
+      "gap_Ry": 0.0426503122,
+      "reference_gap_Eh": 0.0213251561,
+      "computed_gap_Eh": 0.021278657353116848,
+      "difference_Eh": -4.649874688315153e-05,
+      "reference_Vg_Eh": -0.51196904845,
+      "reference_Vu_Eh": -0.49064389235,
+      "computed_Vg_Eh": -0.5117152838457688,
+      "computed_Vu_Eh": -0.49043662649265196
+    },
+    {
+      "R_bohr": 8.0,
+      "E0_Ry": -0.0011764042,
+      "gap_Ry": 0.007928746,
+      "reference_gap_Eh": 0.003964373,
+      "computed_gap_Eh": 0.003961838017653818,
+      "difference_Eh": -2.5349823461820464e-06,
+      "reference_Vg_Eh": -0.5025703886,
+      "reference_Vu_Eh": -0.4986060156,
+      "computed_Vg_Eh": -0.5023782945817116,
+      "computed_Vu_Eh": -0.49841645656405775
+    },
+    {
+      "R_bohr": 10.0,
+      "E0_Ry": -0.0004797975,
+      "gap_Ry": 0.0013553207,
+      "reference_gap_Eh": 0.00067766035,
+      "computed_gap_Eh": 0.0006700393498211277,
+      "difference_Eh": -7.621000178872298e-06,
+      "reference_Vg_Eh": -0.500578728925,
+      "reference_Vu_Eh": -0.49990106857499994,
+      "computed_Vg_Eh": -0.5003905449265321,
+      "computed_Vu_Eh": -0.499720505576711
+    }
+  ],
+  "source": "Olivares-Pilon & Turbiner, arXiv1705.03608v2 table1 https://arxiv.org/html/1705.03608; numerical data column, not fit column",
+  "conversion": "1Ry = .5Eh explicitly; reference table approximations not an exact certified modern curve"
+}

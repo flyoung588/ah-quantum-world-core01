@@ -1,0 +1,11 @@
+{
+  "pulse": {
+    "operation": "electric_pulse",
+    "amplitude_au": 0.004,
+    "duration_au": 240.0,
+    "omega_ratio_to_local_gap": 1.0,
+    "cep_rad": 0.0,
+    "omega_au": 0.4350955420166891
+  },
+  "frequency_held_fixed_for_grid_interpolation_and_basis_checks": true
+}

@@ -1,0 +1,28 @@
+{
+  "provenance": "AI selected these run-time inputs after reading adapter constraints; PROGRAMMATIC_EXPERIMENT, not autonomous discovery",
+  "H2": {
+    "initial": {
+      "theta": 0.37,
+      "relative_phase": 0.21
+    },
+    "control": {
+      "operation": "radial_phase_imprint",
+      "q_bohr_inverse": 0.38
+    },
+    "duration_au": 1200,
+    "branch_duration_au": 160
+  },
+  "H3": {
+    "initial": {
+      "energy_eV": 0.43,
+      "center_R": 5.7,
+      "sigma_R": 0.72
+    },
+    "control": {
+      "operation": "momentum_kick",
+      "delta_k": -0.31
+    },
+    "duration_au": 200,
+    "branch_duration_au": 80
+  }
+}

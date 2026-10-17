@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "stdout": "{'system': 'H2 J=0 nuclear vibration', 'particles': {'protons': 2, 'electrons': 2, 'nuclear_charge': 1, 'proton_mass_me': 1836.15267343, 'reduced_mass_me': 918.076336715, 'electronic_spin': 'singlet ground X1Sigma_g+; nuclear para-H2 J=0'}, 'coordinates': 'R>0, reduced radial u(R); probability |u|\u00b2 dR, NOT R\u00b2|u|\u00b2dR', 'units': 'bohr,Eh,atomic time', 'energy_zero': 'two separated neutral H atoms=-1Eh; TOTAL BO energy convention', 'source': 'Pachucki PRA82 032509(2010) table4; 82 published numerical pairs; 9c9a5f0959626cd4ca6033cf3acc1d4978bd9c5cbbb7f6809e6508bafaee75d9', 'interpolation': 'cubic', 'boundary': {'type': 'Dirichlet u(lower)=u(upper)=0; no periodic wrap', 'lower': 0.2, 'upper': 8.0, 'CAP': False}, 'n': 127, 'approximation': 'single BO surface J=0; no adiabatic/nonadiabatic/relativistic/QED corrections', 'scope': 'table-interpolated model dynamics, NOT precision spectroscopy; interpolation/box error separately measured'}\n",
+  "stderr": "",
+  "meaning": "H2 module and potential instantiate without importing H3 or loading ctypes library"
+}

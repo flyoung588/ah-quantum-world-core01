@@ -1,0 +1,16 @@
+{
+  "initial_max_error": 0.0,
+  "three_step_state_error": 0.0,
+  "operator_hashes": {
+    "V": "61dd2ec9624f2c538384e03759b959d84be0bcb0e32e4236763f49ea7fe4bc2b",
+    "K": "900d2fe3e6a50c481cd585cc430f31b82b480d31bc25db6193b24cbe308406c3",
+    "W": "988a3e47a13add5b25c883daa8a59afa88500a31f09954cff375b77af253012d"
+  },
+  "frozen_operator_hashes": {
+    "V": "61dd2ec9624f2c538384e03759b959d84be0bcb0e32e4236763f49ea7fe4bc2b",
+    "K": "900d2fe3e6a50c481cd585cc430f31b82b480d31bc25db6193b24cbe308406c3",
+    "W": "988a3e47a13add5b25c883daa8a59afa88500a31f09954cff375b77af253012d"
+  },
+  "full_experiment_rerun": false,
+  "mixed_kinetic": "(kx\u00b2+ky\u00b2-kx*ky)/m unchanged"
+}

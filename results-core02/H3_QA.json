@@ -1,0 +1,8 @@
+{
+  "checkpoint_exact": true,
+  "norm_error": 4.2108427855680475e-11,
+  "probability_balance_error": 2.0761170560490427e-14,
+  "energy_drift_Eh": 1.653402414980576e-10,
+  "branch_same_time": true,
+  "branch_state_L2": 1.5428229130436606
+}

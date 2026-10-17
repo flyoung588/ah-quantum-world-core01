@@ -1,0 +1,11 @@
+{
+  "python": "3.12.15",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "sha": "bacc7ee615ff8b76bee9b2d614be233ebd8126fc",
+  "threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "H2": {
+    "max_4step_Python_JS_error": 2.6279491663448297e-14,
+    "observation": {
+      "model_id": "db961ecd2b2979ae97f9f004dd457b3ebc3d3f77cd87c60c28b5e9f7340634c1",
+      "time_au": 1.5,
+      "time_fs": 0.0362832648987855,
+      "norm": 1.0000000000000029,
+      "absorbed": 0,
+      "probability_balance": 1.0000000000000029,
+      "energy_Eh": -1.1620606913536027,
+      "mean_R": 1.571359654104137,
+      "variance_R": 0.028901986263478337
+    },
+    "fork_comparison": {
+      "first": {
+        "model_id": "db961ecd2b2979ae97f9f004dd457b3ebc3d3f77cd87c60c28b5e9f7340634c1",
+        "time_au": 1.5,
+        "time_fs": 0.0362832648987855,
+        "norm": 1.0000000000000029,
+        "absorbed": 0,
+        "probability_balance": 1.0000000000000029,
+        "energy_Eh": -1.1620606913536027,
+        "mean_R": 1.571359654104137,
+        "variance_R": 0.028901986263478337
+      },
+      "second": {
+        "model_id": "db961ecd2b2979ae97f9f004dd457b3ebc3d3f77cd87c60c28b5e9f7340634c1",
+        "time_au": 1.5,
+        "time_fs": 0.0362832648987855,
+        "norm": 1.000000000000003,
+        "absorbed": 0,
+        "probability_balance": 1.000000000000003,
+        "energy_Eh": -1.161828473808036,
+        "mean_R": 1.5715666068905014,
+        "variance_R": 0.028901986596079638
+      },
+      "same_time": true
+    },
+    "export_has_state": true,
+    "pass": true
+  },
+  "H3": {
+    "max_4step_Python_JS_error": 3.7969627442180354e-14,
+    "observation": {
+      "model_id": "2f9cd4fd4c4683871f1b6f13bf5b0cff8f3d2033293781b73201cbb7a3edd8b0",
+      "time_au": 1.5,
+      "time_fs": 0.0362832648987855,
+      "norm": 0.9999999999996226,
+      "absorbed": 4.402809357756946e-13,
+      "probability_balance": 1.0000000000000628,
+      "energy_Eh": -0.1482743159777356,
+      "mean_x": 1.4483507495657766,
+      "mean_y": 4.968203390850835,
+      "reactant_region": 0.9967238040055688,
+      "product_region": 4.359134528898284e-15
+    },
+    "fork_comparison": {
+      "first": {
+        "model_id": "2f9cd4fd4c4683871f1b6f13bf5b0cff8f3d2033293781b73201cbb7a3edd8b0",
+        "time_au": 1.5,
+        "time_fs": 0.0362832648987855,
+        "norm": 0.9999999999996226,
+        "absorbed": 4.402809357756946e-13,
+        "probability_balance": 1.0000000000000628,
+        "energy_Eh": -0.1482743159777356,
+        "mean_x": 1.4483507495657766,
+        "mean_y": 4.968203390850835,
+        "reactant_region": 0.9967238040055688,
+        "product_region": 4.359134528898284e-15
+      },
+      "second": {
+        "model_id": "2f9cd4fd4c4683871f1b6f13bf5b0cff8f3d2033293781b73201cbb7a3edd8b0",
+        "time_au": 1.5,
+        "time_fs": 0.0362832648987855,
+        "norm": 0.9999999999997534,
+        "absorbed": 3.0887768075551403e-13,
+        "probability_balance": 1.0000000000000624,
+        "energy_Eh": -0.14666004499368698,
+        "mean_x": 1.4483507495677803,
+        "mean_y": 4.968076767298342,
+        "reactant_region": 0.9967220736737566,
+        "product_region": 4.360385374453641e-15
+      },
+      "same_time": true
+    },
+    "export_has_state": true,
+    "pass": true
+  },
+  "visual_rendering": "NOT_RUN; numerical engine checks are not browser visual QA"
+}

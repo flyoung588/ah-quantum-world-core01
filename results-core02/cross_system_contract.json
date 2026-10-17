@@ -1,0 +1,51 @@
+{
+  "same_runtime_class": true,
+  "same_main_control_flow": "run(system,request) for both",
+  "cross_model_subtraction_rejected": true,
+  "models": {
+    "H2": {
+      "system": "H2 J=0 nuclear vibration",
+      "particles": {
+        "protons": 2,
+        "electrons": 2,
+        "nuclear_charge": 1,
+        "proton_mass_me": 1836.15267343,
+        "reduced_mass_me": 918.076336715,
+        "electronic_spin": "singlet ground X1Sigma_g+; nuclear para-H2 J=0"
+      },
+      "coordinates": "R>0, reduced radial u(R); probability |u|\u00b2 dR, NOT R\u00b2|u|\u00b2dR",
+      "units": "bohr,Eh,atomic time",
+      "energy_zero": "two separated neutral H atoms=-1Eh; TOTAL BO energy convention",
+      "source": "Pachucki PRA82 032509(2010) table4; 82 published numerical pairs; 9c9a5f0959626cd4ca6033cf3acc1d4978bd9c5cbbb7f6809e6508bafaee75d9",
+      "interpolation": "cubic",
+      "boundary": {
+        "type": "Dirichlet u(lower)=u(upper)=0; no periodic wrap",
+        "lower": 0.2,
+        "upper": 8.0,
+        "CAP": false
+      },
+      "n": 255,
+      "approximation": "single BO surface J=0; no adiabatic/nonadiabatic/relativistic/QED corrections",
+      "scope": "table-interpolated model dynamics, NOT precision spectroscopy; interpolation/box error separately measured"
+    },
+    "H3": {
+      "system": "neutral H3 collinear",
+      "particles": {
+        "protons": 3,
+        "electrons": 3,
+        "nuclear_charge": 1,
+        "mass_me": 1836.15267343,
+        "electronic_spin": "doublet ground surface"
+      },
+      "coordinates": "x=rAB,y=rBC, ordered nuclei",
+      "units": "bohr,Eh,atomic time",
+      "energy_zero": "three separated neutral H atoms in LSTH convention",
+      "source": "QML LSTH commit73f2ef3d322b253a4ef39e08216261bd974180f6; MIT",
+      "boundary": "periodic spectral box .4..14.4bohr; short-range repulsion; large-separation CAP",
+      "n": 256,
+      "approximation": "collinear single adiabatic BO surface, no rotational/nonadiabatic dynamics",
+      "scope": "short regression only; no new asymptotic reaction probability"
+    }
+  },
+  "not_universal": "grid states and diagonal-potential spectral split operators only"
+}

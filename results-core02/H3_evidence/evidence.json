@@ -1,0 +1,454 @@
+{
+  "physical_system": {
+    "system": "neutral H3 collinear",
+    "particles": {
+      "protons": 3,
+      "electrons": 3,
+      "nuclear_charge": 1,
+      "mass_me": 1836.15267343,
+      "electronic_spin": "doublet ground surface"
+    },
+    "coordinates": "x=rAB,y=rBC, ordered nuclei",
+    "units": "bohr,Eh,atomic time",
+    "energy_zero": "three separated neutral H atoms in LSTH convention",
+    "source": "QML LSTH commit73f2ef3d322b253a4ef39e08216261bd974180f6; MIT",
+    "boundary": "periodic spectral box .4..14.4bohr; short-range repulsion; large-separation CAP",
+    "n": 256,
+    "approximation": "collinear single adiabatic BO surface, no rotational/nonadiabatic dynamics",
+    "scope": "short regression only; no new asymptotic reaction probability"
+  },
+  "model_id": "2f9cd4fd4c4683871f1b6f13bf5b0cff8f3d2033293781b73201cbb7a3edd8b0",
+  "initial": {
+    "energy_eV": 0.43,
+    "center_R": 5.7,
+    "sigma_R": 0.72
+  },
+  "controls": [],
+  "timeline": [
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 2.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 5.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 7.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 10.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 12.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 15.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 17.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 20.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 22.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 25.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 27.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 30.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 32.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 35.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 37.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 40.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 42.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 45.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 47.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 50.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 52.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 55.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 57.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 60.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 62.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 65.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 67.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 70.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 72.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 75.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 77.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 80.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 82.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 85.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 87.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 90.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 92.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 95.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 97.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 100.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 102.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 105.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 107.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 110.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 112.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 115.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 117.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 120.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 122.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 125.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 127.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 130.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 132.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 135.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 137.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 140.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 142.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 145.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 147.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 150.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 152.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 155.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 157.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 160.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 162.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 165.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 167.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 170.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 172.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 175.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 177.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 180.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 182.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 185.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 187.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 190.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 192.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 195.0
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 197.5
+    },
+    {
+      "dt_au": 0.25,
+      "count": 10,
+      "end_au": 200.0
+    }
+  ],
+  "state_time_au": 200.0,
+  "absorbed": 4.209850453451959e-11,
+  "observation": {
+    "model_id": "2f9cd4fd4c4683871f1b6f13bf5b0cff8f3d2033293781b73201cbb7a3edd8b0",
+    "time_au": 200.0,
+    "time_fs": 4.8377686531714,
+    "norm": 0.9999999999578916,
+    "absorbed": 4.209850453451959e-11,
+    "probability_balance": 0.9999999999999901,
+    "energy_Eh": -0.1482743158108728,
+    "mean_x": 1.4540775135185613,
+    "mean_y": 3.973851619298579,
+    "reactant_region": 0.9145552470040961,
+    "product_region": 4.150754108272665e-08,
+    "interaction_region": 0.08544471138059494,
+    "edge_probability": 3.3484535304242086e-09
+  },
+  "errors": {
+    "local_probability_balance_max_error": 2.0761170560490427e-14,
+    "local_energy_max_drift_Eh": 1.653402414980576e-10,
+    "convergence_report": "H3_short_convergence.json",
+    "meaning": "local numerical diagnostics, not independent physical certification"
+  },
+  "solver": "symmetric split operator + 2D FFT; mixed kinetic kx\u00b2+ky\u00b2-kxky /m",
+  "state_provenance": "computed wavefunction, not static lookup"
+}

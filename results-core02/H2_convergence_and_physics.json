@@ -1,0 +1,18 @@
+{
+  "time_step_meanR_difference": 1.2763675674154484e-06,
+  "grid_meanR_difference": 6.33898735724614e-08,
+  "extended_box_meanR_difference": 6.424029419527244e-08,
+  "gap_cm_inverse": 4163.3433269788675,
+  "grid_gap_difference_cm_inverse": 0.00015893510408204747,
+  "pchip_gap_cm_inverse": 4164.104433890614,
+  "interpolation_sensitivity_cm_inverse": 0.7611069117465377,
+  "interpolation_sensitivity_is_NOT_rigorous_error_bound": true,
+  "independent_BO_reference_cm_inverse": 4163.4035,
+  "independent_experimental_reference_cm_inverse": 4161.16632,
+  "BO_discrepancy_cm_inverse": -0.0601730211328686,
+  "experiment_discrepancy_cm_inverse": 2.1770069788672117,
+  "reference": "Dickenson etal PRL110193601(2013) table2 https://arxiv.org/html/1304.6390",
+  "missing_physics": "adiabatic, nonadiabatic, relativistic, QED terms absent; experiment mismatch NOT pure numerical error",
+  "state_L2_vs_exact_same_discrete_H": 1.8557845808552264e-05,
+  "same_H_check_not_independent_physics": true
+}

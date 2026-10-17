@@ -1,0 +1,6 @@
+{
+  "t_au": 200,
+  "dt_mean_y_difference": 1.35812284529635e-07,
+  "grid128_vs256_mean_y_difference": 3.3225104023593133e-06,
+  "not_asymptotic_reaction_probability": true
+}

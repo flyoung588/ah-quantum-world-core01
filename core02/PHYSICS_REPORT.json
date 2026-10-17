@@ -1,0 +1,539 @@
+{
+  "id": "QW-CORE02-20261017",
+  "execution_status": "COMPLETED_WITH_LIMITED_CROSS_SYSTEM_SUPPORT",
+  "source_commit": "bacc7ee615ff8b76bee9b2d614be233ebd8126fc",
+  "run_url": "https://github.com/flyoung588/ah-quantum-world-core01/actions/runs/39041444256",
+  "jobs": 1,
+  "attempts": 1,
+  "job_duration_seconds": 64.0,
+  "original_Core01_evidence_unchanged": true,
+  "new_runtime_source_audited_bytes_unchanged": true,
+  "Q1": {
+    "answer": "YES, within the implemented grid-state class",
+    "evidence": "same QuantumWorld class and identical run(system,request) flow propagated H2 radial1D and H3 collinear2D",
+    "actual_results": {
+      "H2": {
+        "initial": {
+          "theta": 0.37,
+          "relative_phase": 0.21
+        },
+        "duration_au": 1200.0,
+        "observations": 481,
+        "initial_observation": {
+          "model_id": "db961ecd2b2979ae97f9f004dd457b3ebc3d3f77cd87c60c28b5e9f7340634c1",
+          "time_au": 0.0,
+          "time_fs": 0.0,
+          "norm": 1.0,
+          "absorbed": 0.0,
+          "probability_balance": 1.0,
+          "energy_Eh": -1.1620606913951104,
+          "mean_R": 1.5707385972774115,
+          "variance_R": 0.02901461665020122,
+          "vibrational_populations": [
+            0.8692342793647936,
+            0.13076572063520622,
+            1.2376603898034756e-32,
+            9.659840883823526e-32,
+            9.788169496493686e-32,
+            7.992150232548334e-32
+          ],
+          "edge_probability": 2.5303963201297294e-14
+        },
+        "final_observation": {
+          "model_id": "db961ecd2b2979ae97f9f004dd457b3ebc3d3f77cd87c60c28b5e9f7340634c1",
+          "time_au": 1200.0,
+          "time_fs": 29.0266119190284,
+          "norm": 1.0000000000011284,
+          "absorbed": 0.0,
+          "probability_balance": 1.0000000000011284,
+          "energy_Eh": -1.162060705073655,
+          "mean_R": 1.366070904739742,
+          "variance_R": 0.02411557349894609,
+          "vibrational_populations": [
+            0.8692350004519176,
+            0.1307649995455249,
+            1.1951943804713466e-12,
+            8.518074780198492e-13,
+            7.62025338436231e-13,
+            3.9039995501584987e-13
+          ],
+          "edge_probability": 8.664354622198657e-13
+        },
+        "branch_comparison": {
+          "first": {
+            "model_id": "db961ecd2b2979ae97f9f004dd457b3ebc3d3f77cd87c60c28b5e9f7340634c1",
+            "time_au": 160.0,
+            "time_fs": 3.8702149225371203,
+            "norm": 1.0000000000001485,
+            "absorbed": 0.0,
+            "probability_balance": 1.0000000000001485,
+            "energy_Eh": -1.1620607058562156,
+            "mean_R": 1.35436148678608,
+            "variance_R": 0.021301673668935938,
+            "vibrational_populations": [
+              0.8692350417053779,
+              0.13076495829050838,
+              1.3467801713911048e-12,
+              1.4159745303725367e-12,
+              5.22415906270543e-13,
+              4.732613482205174e-13
+            ],
+            "edge_probability": 9.141209414988761e-13
+          },
+          "second": {
+            "model_id": "db961ecd2b2979ae97f9f004dd457b3ebc3d3f77cd87c60c28b5e9f7340634c1",
+            "time_au": 160.0,
+            "time_fs": 3.8702149225371203,
+            "norm": 1.0000000000001519,
+            "absorbed": 0.0,
+            "probability_balance": 1.0000000000001519,
+            "energy_Eh": -1.1618134522894614,
+            "mean_R": 1.361322314806948,
+            "variance_R": 0.0228975657472988,
+            "vibrational_populations": [
+              0.8568669690688675,
+              0.14244228480429638,
+              0.0006754269575877844,
+              1.4382496078145709e-05,
+              8.322431392935786e-07,
+              8.723272076474746e-08
+            ],
+            "edge_probability": 8.603006322884254e-13
+          },
+          "state_L2": 0.5909870187605472,
+          "same_time": true
+        },
+        "control_work": [
+          {
+            "operation": "radial_phase_imprint",
+            "q_bohr_inverse": 0.38,
+            "time_au": 0.0,
+            "work_Eh": 0.00024725317156448767
+          }
+        ],
+        "QA": {
+          "checkpoint_exact": true,
+          "norm_error": 1.1284306822290091e-12,
+          "probability_balance_error": 1.1284306822290091e-12,
+          "energy_drift_Eh": 1.4833379413659031e-08,
+          "branch_same_time": true,
+          "branch_state_L2": 0.5909870187605472
+        }
+      },
+      "H3": {
+        "initial": {
+          "energy_eV": 0.43,
+          "center_R": 5.7,
+          "sigma_R": 0.72
+        },
+        "duration_au": 200.0,
+        "observations": 81,
+        "initial_observation": {
+          "model_id": "2f9cd4fd4c4683871f1b6f13bf5b0cff8f3d2033293781b73201cbb7a3edd8b0",
+          "time_au": 0.0,
+          "time_fs": 0.0,
+          "norm": 1.0,
+          "absorbed": 0.0,
+          "probability_balance": 1.0,
+          "energy_Eh": -0.14827431597621304,
+          "mean_x": 1.4483503528705903,
+          "mean_y": 4.9758248240658505,
+          "reactant_region": 0.9968264381099944,
+          "product_region": 4.253529564149405e-15,
+          "interaction_region": 0.0031735618899217887,
+          "edge_probability": 4.635022238464176e-09
+        },
+        "final_observation": {
+          "model_id": "2f9cd4fd4c4683871f1b6f13bf5b0cff8f3d2033293781b73201cbb7a3edd8b0",
+          "time_au": 200.0,
+          "time_fs": 4.8377686531714,
+          "norm": 0.9999999999578916,
+          "absorbed": 4.209850453451959e-11,
+          "probability_balance": 0.9999999999999901,
+          "energy_Eh": -0.1482743158108728,
+          "mean_x": 1.4540775135185613,
+          "mean_y": 3.973851619298579,
+          "reactant_region": 0.9145552470040961,
+          "product_region": 4.150754108272665e-08,
+          "interaction_region": 0.08544471138059494,
+          "edge_probability": 3.3484535304242086e-09
+        },
+        "branch_comparison": {
+          "first": {
+            "model_id": "2f9cd4fd4c4683871f1b6f13bf5b0cff8f3d2033293781b73201cbb7a3edd8b0",
+            "time_au": 80.0,
+            "time_fs": 1.9351074612685601,
+            "norm": 0.9999999999586094,
+            "absorbed": 4.137685048485582e-11,
+            "probability_balance": 0.9999999999999863,
+            "energy_Eh": -0.1482743159894042,
+            "mean_x": 1.4495407581474866,
+            "mean_y": 4.570669705197008,
+            "reactant_region": 0.9852578551872143,
+            "product_region": 6.478952577104339e-12,
+            "interaction_region": 0.01474214476241321,
+            "edge_probability": 3.5216855938007804e-09
+          },
+          "second": {
+            "model_id": "2f9cd4fd4c4683871f1b6f13bf5b0cff8f3d2033293781b73201cbb7a3edd8b0",
+            "time_au": 80.0,
+            "time_fs": 1.9351074612685601,
+            "norm": 0.9999999999577002,
+            "absorbed": 4.2286662983244994e-11,
+            "probability_balance": 0.9999999999999868,
+            "energy_Eh": -0.14665989494607307,
+            "mean_x": 1.4495566236947985,
+            "mean_y": 4.550424864662783,
+            "reactant_region": 0.9841798733405657,
+            "product_region": 6.471573880118333e-12,
+            "interaction_region": 0.015820126608196372,
+            "edge_probability": 3.521318438833786e-09
+          },
+          "state_L2": 1.5428229130436606,
+          "same_time": true
+        },
+        "control_work": [
+          {
+            "operation": "momentum_kick",
+            "delta_k": -0.31,
+            "time_au": 0.0,
+            "work_Eh": 0.001614421055965043
+          }
+        ],
+        "QA": {
+          "checkpoint_exact": true,
+          "norm_error": 4.2108427855680475e-11,
+          "probability_balance_error": 2.0761170560490427e-14,
+          "energy_drift_Eh": 1.653402414980576e-10,
+          "branch_same_time": true,
+          "branch_state_L2": 1.5428229130436606
+        }
+      }
+    }
+  },
+  "Q2": {
+    "answer": "YES for these two adapters, no runtime control-flow edit between systems",
+    "evidence": "runtime.py contains no H2/H3/PES/product-region identity; adapters supply Hamiltonian/coordinates/transforms/preparation/control/observables"
+  },
+  "Q3": {
+    "answer": "YES, machine interface accepts runtime JSON within declared allowed bounds and computes new observations",
+    "status": "PROGRAMMATIC_EXPERIMENT, not AUTONOMOUS_DISCOVERY",
+    "evidence": "actual_requests.json, both branch comparisons, actual checkpoint/evidence outputs; parameter choices were AI-selected before frozen run, not a live adaptive research agent"
+  },
+  "Q4": {
+    "answer": "model identity, grid, boundary, approximations, units and energy reference are recorded; incompatible comparisons rejected",
+    "evidence": {
+      "same_runtime_class": true,
+      "same_main_control_flow": "run(system,request) for both",
+      "cross_model_subtraction_rejected": true,
+      "models": {
+        "H2": {
+          "system": "H2 J=0 nuclear vibration",
+          "particles": {
+            "protons": 2,
+            "electrons": 2,
+            "nuclear_charge": 1,
+            "proton_mass_me": 1836.15267343,
+            "reduced_mass_me": 918.076336715,
+            "electronic_spin": "singlet ground X1Sigma_g+; nuclear para-H2 J=0"
+          },
+          "coordinates": "R>0, reduced radial u(R); probability |u|² dR, NOT R²|u|²dR",
+          "units": "bohr,Eh,atomic time",
+          "energy_zero": "two separated neutral H atoms=-1Eh; TOTAL BO energy convention",
+          "source": "Pachucki PRA82 032509(2010) table4; 82 published numerical pairs; 9c9a5f0959626cd4ca6033cf3acc1d4978bd9c5cbbb7f6809e6508bafaee75d9",
+          "interpolation": "cubic",
+          "boundary": {
+            "type": "Dirichlet u(lower)=u(upper)=0; no periodic wrap",
+            "lower": 0.2,
+            "upper": 8.0,
+            "CAP": false
+          },
+          "n": 255,
+          "approximation": "single BO surface J=0; no adiabatic/nonadiabatic/relativistic/QED corrections",
+          "scope": "table-interpolated model dynamics, NOT precision spectroscopy; interpolation/box error separately measured"
+        },
+        "H3": {
+          "system": "neutral H3 collinear",
+          "particles": {
+            "protons": 3,
+            "electrons": 3,
+            "nuclear_charge": 1,
+            "mass_me": 1836.15267343,
+            "electronic_spin": "doublet ground surface"
+          },
+          "coordinates": "x=rAB,y=rBC, ordered nuclei",
+          "units": "bohr,Eh,atomic time",
+          "energy_zero": "three separated neutral H atoms in LSTH convention",
+          "source": "QML LSTH commit73f2ef3d322b253a4ef39e08216261bd974180f6; MIT",
+          "boundary": "periodic spectral box .4..14.4bohr; short-range repulsion; large-separation CAP",
+          "n": 256,
+          "approximation": "collinear single adiabatic BO surface, no rotational/nonadiabatic dynamics",
+          "scope": "short regression only; no new asymptotic reaction probability"
+        }
+      },
+      "not_universal": "grid states and diagonal-potential spectral split operators only"
+    },
+    "limitations": "matching identity protects declared contracts, not all possible semantic errors"
+  },
+  "Q5": {
+    "reusable": [
+      "grid QuantumState",
+      "generic scheduling/step/evolve",
+      "unitary phase-control work accounting",
+      "observe dispatch",
+      "fork",
+      "matched-model compare",
+      "hash-checked checkpoint/restore",
+      "evidence serialization",
+      "spectral split-operator algorithm when mathematically applicable"
+    ],
+    "model_specific": [
+      "justified particles/masses/spin/charges",
+      "coordinates and measure",
+      "Hamiltonian and sources",
+      "boundary and truncation",
+      "initial-state definitions",
+      "allowed operations with actual physical interpretation",
+      "observables and validity domain",
+      "appropriate propagator and numerical/physical benchmarks"
+    ],
+    "not_yet_supported": [
+      "density matrices",
+      "nonlocal or matrix-valued potentials",
+      "real-time many-electron dynamics",
+      "nonadiabatic coupled surfaces",
+      "quantum fields",
+      "a general interchangeable propagator registry"
+    ],
+    "propagator_limit": "currently local diagonal potentials and kinetic operators diagonal in supplied FFT/DST representation; a fundamentally different propagator needs an explicit integration extension, not just a new potential"
+  },
+  "H3_frozen_regression": {
+    "initial_max_error": 0.0,
+    "three_step_state_error": 0.0,
+    "operator_hashes": {
+      "V": "61dd2ec9624f2c538384e03759b959d84be0bcb0e32e4236763f49ea7fe4bc2b",
+      "K": "900d2fe3e6a50c481cd585cc430f31b82b480d31bc25db6193b24cbe308406c3",
+      "W": "988a3e47a13add5b25c883daa8a59afa88500a31f09954cff375b77af253012d"
+    },
+    "frozen_operator_hashes": {
+      "V": "61dd2ec9624f2c538384e03759b959d84be0bcb0e32e4236763f49ea7fe4bc2b",
+      "K": "900d2fe3e6a50c481cd585cc430f31b82b480d31bc25db6193b24cbe308406c3",
+      "W": "988a3e47a13add5b25c883daa8a59afa88500a31f09954cff375b77af253012d"
+    },
+    "full_experiment_rerun": false,
+    "mixed_kinetic": "(kx²+ky²-kx*ky)/m unchanged"
+  },
+  "H3_short_convergence": {
+    "t_au": 200,
+    "dt_mean_y_difference": 1.35812284529635e-07,
+    "grid128_vs256_mean_y_difference": 3.3225104023593133e-06,
+    "not_asymptotic_reaction_probability": true
+  },
+  "H2_convergence_and_physics": {
+    "time_step_meanR_difference": 1.2763675674154484e-06,
+    "grid_meanR_difference": 6.33898735724614e-08,
+    "extended_box_meanR_difference": 6.424029419527244e-08,
+    "gap_cm_inverse": 4163.3433269788675,
+    "grid_gap_difference_cm_inverse": 0.00015893510408204747,
+    "pchip_gap_cm_inverse": 4164.104433890614,
+    "interpolation_sensitivity_cm_inverse": 0.7611069117465377,
+    "interpolation_sensitivity_is_NOT_rigorous_error_bound": true,
+    "independent_BO_reference_cm_inverse": 4163.4035,
+    "independent_experimental_reference_cm_inverse": 4161.16632,
+    "BO_discrepancy_cm_inverse": -0.0601730211328686,
+    "experiment_discrepancy_cm_inverse": 2.1770069788672117,
+    "reference": "Dickenson etal PRL110193601(2013) table2 https://arxiv.org/html/1304.6390",
+    "missing_physics": "adiabatic, nonadiabatic, relativistic, QED terms absent; experiment mismatch NOT pure numerical error",
+    "state_L2_vs_exact_same_discrete_H": 1.8557845808552264e-05,
+    "same_H_check_not_independent_physics": true
+  },
+  "H2_saved_signal_analysis": {
+    "source": "actual saved H2 <R>(t), no repropagation",
+    "observations": 481,
+    "time_span_au": [
+      0.0,
+      1200.0
+    ],
+    "mean_R_min": 1.34879222738216,
+    "mean_R_max": 1.5732028356675225,
+    "fit": "a+b cos(omega*t)+c sin(omega*t); omega selected from recorded signal, not fixed to reference",
+    "omega_au": 0.018969608279886647,
+    "period_au": 331.22377723748815,
+    "wavenumber_cm_inverse": 4163.347784332428,
+    "R_fit_rms_bohr": 3.3882719641049364e-08,
+    "BO_reference_cm_inverse": 4163.4035,
+    "difference_from_BO_reference_cm_inverse": -0.0557156675722581,
+    "physical_accuracy_claim": "NOT_QUALIFIED; fit digits do not overcome potential interpolation sensitivity, missing physics, or finite sampling",
+    "wall_seconds": 0.09426662500482053
+  },
+  "H2_CAP_accounting": {
+    "model_id": "9b58a7111be1283c268f28e7d4373f840ff958a2790ad2794e06859c6a383ec5",
+    "time_au": 40.0,
+    "time_fs": 0.9675537306342801,
+    "norm": 0.9561257314497092,
+    "absorbed": 0.04387426855031976,
+    "probability_balance": 1.000000000000029,
+    "energy_Eh": -0.9977345320868286,
+    "mean_R": 6.718155311566106,
+    "variance_R": 0.06341196629086408,
+    "vibrational_populations": [
+      3.740580235117279e-31,
+      6.561421596022022e-31,
+      6.192247462293231e-31,
+      3.9082361381669254e-32,
+      6.214979931218195e-31,
+      5.7255334343770724e-30
+    ],
+    "edge_probability": 0.11753467862227727
+  },
+  "browser_numerical_core": {
+    "H2": {
+      "max_4step_Python_JS_error": 2.6279491663448297e-14,
+      "observation": {
+        "model_id": "db961ecd2b2979ae97f9f004dd457b3ebc3d3f77cd87c60c28b5e9f7340634c1",
+        "time_au": 1.5,
+        "time_fs": 0.0362832648987855,
+        "norm": 1.0000000000000029,
+        "absorbed": 0,
+        "probability_balance": 1.0000000000000029,
+        "energy_Eh": -1.1620606913536027,
+        "mean_R": 1.571359654104137,
+        "variance_R": 0.028901986263478337
+      },
+      "fork_comparison": {
+        "first": {
+          "model_id": "db961ecd2b2979ae97f9f004dd457b3ebc3d3f77cd87c60c28b5e9f7340634c1",
+          "time_au": 1.5,
+          "time_fs": 0.0362832648987855,
+          "norm": 1.0000000000000029,
+          "absorbed": 0,
+          "probability_balance": 1.0000000000000029,
+          "energy_Eh": -1.1620606913536027,
+          "mean_R": 1.571359654104137,
+          "variance_R": 0.028901986263478337
+        },
+        "second": {
+          "model_id": "db961ecd2b2979ae97f9f004dd457b3ebc3d3f77cd87c60c28b5e9f7340634c1",
+          "time_au": 1.5,
+          "time_fs": 0.0362832648987855,
+          "norm": 1.000000000000003,
+          "absorbed": 0,
+          "probability_balance": 1.000000000000003,
+          "energy_Eh": -1.161828473808036,
+          "mean_R": 1.5715666068905014,
+          "variance_R": 0.028901986596079638
+        },
+        "same_time": true
+      },
+      "export_has_state": true,
+      "pass": true
+    },
+    "H3": {
+      "max_4step_Python_JS_error": 3.7969627442180354e-14,
+      "observation": {
+        "model_id": "2f9cd4fd4c4683871f1b6f13bf5b0cff8f3d2033293781b73201cbb7a3edd8b0",
+        "time_au": 1.5,
+        "time_fs": 0.0362832648987855,
+        "norm": 0.9999999999996226,
+        "absorbed": 4.402809357756946e-13,
+        "probability_balance": 1.0000000000000628,
+        "energy_Eh": -0.1482743159777356,
+        "mean_x": 1.4483507495657766,
+        "mean_y": 4.968203390850835,
+        "reactant_region": 0.9967238040055688,
+        "product_region": 4.359134528898284e-15
+      },
+      "fork_comparison": {
+        "first": {
+          "model_id": "2f9cd4fd4c4683871f1b6f13bf5b0cff8f3d2033293781b73201cbb7a3edd8b0",
+          "time_au": 1.5,
+          "time_fs": 0.0362832648987855,
+          "norm": 0.9999999999996226,
+          "absorbed": 4.402809357756946e-13,
+          "probability_balance": 1.0000000000000628,
+          "energy_Eh": -0.1482743159777356,
+          "mean_x": 1.4483507495657766,
+          "mean_y": 4.968203390850835,
+          "reactant_region": 0.9967238040055688,
+          "product_region": 4.359134528898284e-15
+        },
+        "second": {
+          "model_id": "2f9cd4fd4c4683871f1b6f13bf5b0cff8f3d2033293781b73201cbb7a3edd8b0",
+          "time_au": 1.5,
+          "time_fs": 0.0362832648987855,
+          "norm": 0.9999999999997534,
+          "absorbed": 3.0887768075551403e-13,
+          "probability_balance": 1.0000000000000624,
+          "energy_Eh": -0.14666004499368698,
+          "mean_x": 1.4483507495677803,
+          "mean_y": 4.968076767298342,
+          "reactant_region": 0.9967220736737566,
+          "product_region": 4.360385374453641e-15
+        },
+        "same_time": true
+      },
+      "export_has_state": true,
+      "pass": true
+    },
+    "visual_rendering": "NOT_RUN; numerical engine checks are not browser visual QA"
+  },
+  "environment": {
+    "python": "3.12.15",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "sha": "bacc7ee615ff8b76bee9b2d614be233ebd8126fc",
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "resources": {
+    "wall_seconds": 31.71041658599998,
+    "cpu_user_seconds": 30.794291,
+    "cpu_system_seconds": 0.16097,
+    "maxrss_KiB": 171228,
+    "cgroup": {
+      "memory.max": "1073741824",
+      "memory.peak": "166248448",
+      "memory.current": "114593792",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "memory.swap.max": "0",
+      "cpu.max": "100000 100000",
+      "cpu.stat": "usage_usec 32391503\nuser_usec 32111568\nsystem_usec 279935\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 324\nnr_throttled 7\nthrottled_usec 1539\nnr_bursts 0\nburst_usec 0"
+    }
+  },
+  "failure": null,
+  "host_failure": null,
+  "boundaries": [
+    "H3 original mixed kinetic and LSTH grid hashes and3-step state match exactly; no original3x48.38fs rerun",
+    "H3 new experiment only200au=4.84fs plus short branch/regressions; regional occupations are not asymptotic yield",
+    "H2 reduced radial u(R) uses |u|²dR, not R²|u|²dR; truncated positive-interval Dirichlet conditions, extended-box test, no periodic wrap",
+    "82-point published H2 table does not inherit15-digit spectral accuracy: cubic vs PCHIP gap sensitivity0.7611cm^-1 is a diagnostic, not a rigorous bound",
+    "external BO gap reference shares underlying BO physics/source lineage, not an independently measured potential; experimental reference is independently measured but includes physics absent here",
+    "finite-mass/adiabatic/nonadiabatic/relativistic/QED corrections absent; cannot call experiment discrepancy pure numerical error",
+    "ideal phase operations are valid specified model unitaries with work accounting, not a claimed laboratory pulse implementation or dipole-allowed transition",
+    "same-H eigenstate evolution comparison and Python/JS parity are numerical checks, not independent physical confirmation",
+    "H2 closed norm/energy newly checked; new H3 has CAP and probability accounting; prior Core01 closed result is inherited, not rerun",
+    "Python API supports radial Gaussian for CAP diagnostic; browser preparation currently supports only v0/v1 superpositions for H2 and the declared incident packet for H3",
+    "browser rendering/interaction QA NOT_RUN; cloud Node actual numerical-core parity and local syntax/binding QA are not visual QA",
+    "Scene01 original still NOT_READ; H2 source replaced by independently accessed published numerical facts with attribution",
+    "science process tree1CPU/1thread/1GiB/no swap/no network; standard-host preparation/build outside that container, whole job15min",
+    "no new physical discovery, H2 precision-spectrum qualification, general electronic solver qualification, RSI or production adoption"
+  ],
+  "historical_statuses": {
+    "E01-C": "NO-GO",
+    "E01-C2": "NO-GO",
+    "NUMERICAL_SOLVER_QUALIFIED": "INCOMPLETE",
+    "H2_PHYSICAL_BASELINE": "NOT_QUALIFIED",
+    "ORIGINAL_DISCOVERY_CAPABILITY": "NOT_TESTED"
+  },
+  "next": "STOP and return to B-Chat, no Core03 or automatic further experiment",
+  "view_static_QA": {
+    "H2_H3_actual_cloud_payload_present": true,
+    "inline_script_syntax": "PASS",
+    "visual_browser_QA": "NOT_RUN",
+    "no_local_physical_solve": true,
+    "H2_browser_subset": "v0/v1 superposition; Gaussian diagnostic Python only"
+  }
+}

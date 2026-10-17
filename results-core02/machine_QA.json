@@ -1,0 +1,11 @@
+{
+  "cross_system_runtime": "PASS",
+  "H3_frozen_regression": "PASS",
+  "H2_independent_dependency": "PASS",
+  "checkpoint_restore": "PASS",
+  "cross_system_subtraction_rejected": "PASS",
+  "actual_data_not_static_lookup": true,
+  "H2_precision_spectroscopy": "NOT_QUALIFIED",
+  "selection": "PROGRAMMATIC_EXPERIMENT, not AUTONOMOUS_DISCOVERY",
+  "visual_browser_QA": "NOT_RUN"
+}

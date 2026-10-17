@@ -21,6 +21,8 @@ class QuantumState:
     initial:dict=field(default_factory=dict)
     controls:list=field(default_factory=list)
     timeline:list=field(default_factory=list)
+    parameters:dict=field(default_factory=dict)
+    work_input:float=0.
 
 class Hamiltonian:
     def __init__(self,V,K,forward,inverse,W=None,discretization=''):
@@ -43,6 +45,9 @@ class PhysicalSystem:
 class TimeEvolution:
     @staticmethod
     def step(system,state,dt):
+        if hasattr(system.hamiltonian,'propagate'):
+            system.hamiltonian.propagate(state,dt,system.dv)
+            return
         # Same symmetric split operator and independent CAP accounting as Core01.
         h=system.hamiltonian;a=np.exp((-1j*h.V-h.W)*dt/2);b=np.exp(-1j*h.K*dt)
         loss=-np.expm1(-h.W*dt)
@@ -55,7 +60,9 @@ class ObservableEngine:
     @staticmethod
     def measure(system,state):
         norm=float(np.vdot(state.psi,state.psi).real*system.dv)
-        base={'model_id':state.model_id,'time_au':state.t,'time_fs':state.t*.024188843265857,'norm':norm,'absorbed':state.absorbed,'probability_balance':norm+state.absorbed,'energy_Eh':system.hamiltonian.energy(state.psi,system.dv)/norm}
+        h=system.hamiltonian
+        energy=h.energy_state(state,system.dv) if hasattr(h,'energy_state') else h.energy(state.psi,system.dv)
+        base={'model_id':state.model_id,'time_au':state.t,'time_fs':state.t*.024188843265857,'norm':norm,'absorbed':state.absorbed,'probability_balance':norm+state.absorbed,'energy_Eh':energy/norm,'work_input_Eh':state.work_input}
         return {**base,**system.observables(state)}
 
 class EvidenceInterface:
@@ -63,7 +70,7 @@ class EvidenceInterface:
     def export(world,directory):
         p=Path(directory);p.mkdir(parents=True,exist_ok=True)
         np.savez_compressed(p/'wavefunction.npz',psi=world.state.psi,**{'axis'+str(i):a for i,a in enumerate(world.system.axes)})
-        meta=clean({'physical_system':world.system.metadata(),'model_id':world.state.model_id,'initial':world.state.initial,'controls':world.state.controls,'timeline':world.state.timeline,'state_time_au':world.state.t,'absorbed':world.state.absorbed,'observation':world.observe(),'errors':world.error_evidence,'solver':world.system.hamiltonian.discretization,'state_provenance':'computed wavefunction, not static lookup'})
+        meta=clean({'physical_system':world.system.metadata(),'model_id':world.state.model_id,'initial':world.state.initial,'controls':world.state.controls,'timeline':world.state.timeline,'state_time_au':world.state.t,'absorbed':world.state.absorbed,'state_parameters':world.state.parameters,'work_input_Eh':world.state.work_input,'observation':world.observe(),'errors':world.error_evidence,'solver':world.system.hamiltonian.discretization,'state_provenance':'computed wavefunction, not static lookup'})
         (p/'evidence.json').write_text(json.dumps(meta,indent=2,allow_nan=False))
         hashes={f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in p.iterdir() if f.name!='SHA256.json'}
         (p/'SHA256.json').write_text(json.dumps(hashes,indent=2));return meta
@@ -75,15 +82,20 @@ class QuantumWorld:
     def allowed(self):return clean(self.system.allowed())
     def prepare(self,initial_state):
         psi=np.asarray(self.system.initial_wavefunction(initial_state),dtype=complex)
-        if psi.shape!=self.system.hamiltonian.V.shape or not np.isfinite(psi).all():raise ValueError('invalid state')
+        if psi.shape!=getattr(self.system.hamiltonian,'state_shape',self.system.hamiltonian.V.shape) or not np.isfinite(psi).all():raise ValueError('invalid state')
         norm=np.vdot(psi,psi).real*self.system.dv
         if norm<=0:raise ValueError('zero state')
         self.state=QuantumState(psi/np.sqrt(norm),self.system.identity,initial=copy.deepcopy(initial_state));return self.observe()
     def apply(self,control):
-        before=self.observe()['energy_Eh'];psi=self.system.apply_control(self.state.psi.copy(),control)
+        before=self.observe()['energy_Eh']
+        if hasattr(self.system,'apply_to_state'):
+            self.system.apply_to_state(self.state,control)
+            psi=self.state.psi
+        else:psi=self.system.apply_control(self.state.psi.copy(),control)
         if not np.isfinite(psi).all():raise ValueError('nonfinite control result')
         self.state.psi=psi
-        self.state.controls.append({**control,'time_au':self.state.t,'work_Eh':self.observe()['energy_Eh']-before});return self.observe()
+        after=self.observe()['energy_Eh'];self.state.work_input+=after-before
+        self.state.controls.append({**control,'time_au':self.state.t,'work_Eh':after-before});return self.observe()
     def step(self,dt=.25,count=1):
         if not np.isfinite(dt) or not(0<dt<=self.system.max_dt) or not isinstance(count,int) or not(1<=count<=20000):raise ValueError('bounded step')
         for _ in range(count):TimeEvolution.step(self.system,self.state,dt)
@@ -107,7 +119,7 @@ class QuantumWorld:
         assert all(hashlib.sha256((p/n).read_bytes()).hexdigest()==h for n,h in manifest.items())
         if meta['model_id']!=self.system.identity:raise ValueError('checkpoint model mismatch')
         with np.load(p/'wavefunction.npz',allow_pickle=False) as z:psi=z['psi'].copy()
-        self.state=QuantumState(psi,meta['model_id'],meta['state_time_au'],meta['absorbed'],meta['initial'],meta['controls'],meta['timeline']);self.error_evidence=meta['errors'];return self.observe()
+        self.state=QuantumState(psi,meta['model_id'],meta['state_time_au'],meta['absorbed'],meta['initial'],meta['controls'],meta['timeline'],meta.get('state_parameters',{}),meta.get('work_input_Eh',0.));self.error_evidence=meta['errors'];return self.observe()
     def export_evidence(self,directory):return EvidenceInterface.export(self,directory)
 
 ExperimentControl=QuantumWorld

@@ -1,0 +1,13 @@
+{
+ "classification":"PROGRAMMATIC_EXPERIMENT",
+ "initial":{"center_R_bohr":2.0,"sigma_R_bohr":0.22},
+ "pulse":{"operation":"electric_pulse","amplitude_au":0.004,"duration_au":240.0,"omega_ratio_to_local_gap":1.0,"cep_rad":0.0},
+ "branch_amplitude_au":0.0028,
+ "duration_au":240.0,
+ "dt_au":0.05,
+ "primary_basis":"aug-cc-pVTZ",
+ "secondary_basis":"aug-cc-pVQZ",
+ "nuclear_grid":255,
+ "refined_nuclear_grid":511,
+ "electronic_spacing_bohr":0.05
+}

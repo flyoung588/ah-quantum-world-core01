@@ -1,10 +1,10 @@
-name: Core02 cross-system quantum runtime once
+name: Core03 coupled electronic quantum runtime once
 on:
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: quantum-core02-once
+  group: quantum-core03-once
   cancel-in-progress: false
 jobs:
   core:
@@ -21,9 +21,9 @@ jobs:
         with:
           persist-credentials: false
       - name: Build fixed isolated environment, no persistent cache
-        run: timeout --kill-after=5s 150s docker build --pull --no-cache --build-arg BASE_IMAGE=python@sha256:2ed6491b93cd49272ee6de2b5a38440c3448360322c089fc23e370722d74179d -f core02/Dockerfile -t core02:once .
+        run: timeout --kill-after=5s 150s docker build --pull --no-cache --build-arg BASE_IMAGE=python@sha256:2ed6491b93cd49272ee6de2b5a38440c3448360322c089fc23e370722d74179d -f core03/Dockerfile -t core03:once .
       - name: One bounded quantum dynamics run
-        run: python3 -B core02/host_run.py
+        run: python3 -B core03/host_run.py
       - name: Preserve actual complete or partial evidence
         if: always()
-        run: python3 -B core02/export_logs.py "$RUNNER_TEMP/core02-results"
+        run: python3 -B core03/export_logs.py "$RUNNER_TEMP/core03-results"

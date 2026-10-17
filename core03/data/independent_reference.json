@@ -1,0 +1,18 @@
+{
+ "source":"Olivares-Pilon & Turbiner, arXiv1705.03608v2 table1 https://arxiv.org/html/1705.03608; numerical data column, not fit column",
+ "units":"R in bohr, E0 and gap in Rydberg",
+ "E0_definition":"E0=(E_u+E_g)/2 +1, with energies in Ry",
+ "conversion":"gap_Eh=gap_Ry/2; Vg_Eh=(E0_Ry-1)/2-gap_Ry/4; Vu_Eh=(E0_Ry-1)/2+gap_Ry/4",
+ "accuracy_limit":"as tabulated reference approximations, not asserted exact BO energies; no dipole reference supplied",
+ "license_note":"attributed numerical facts only; full paper not republished",
+ "rows":[
+  {"R_bohr":1.0,"E0_Ry":0.9834000615,"gap_Ry":1.7739453766},
+  {"R_bohr":2.0,"E0_Ry":0.2298313933,"gap_Ry":0.8701996446},
+  {"R_bohr":3.0,"E0_Ry":0.0543521359,"gap_Ry":0.4189557280},
+  {"R_bohr":4.0,"E0_Ry":0.0083644769,"gap_Ry":0.2010684887},
+  {"R_bohr":5.0,"E0_Ry":-0.0017119084,"gap_Ry":0.0942573639},
+  {"R_bohr":6.0,"E0_Ry":-0.0026129408,"gap_Ry":0.0426503122},
+  {"R_bohr":8.0,"E0_Ry":-0.0011764042,"gap_Ry":0.0079287460},
+  {"R_bohr":10.0,"E0_Ry":-0.0004797975,"gap_Ry":0.0013553207}
+ ]
+}

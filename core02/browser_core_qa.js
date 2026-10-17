@@ -1,0 +1,4 @@
+const fs=require('fs');global.QuantumWorld=require('../world-browser.js');const{LiveWorld,h2Adapter,h3Adapter}=require('./browser-runtime.js');
+const models=JSON.parse(fs.readFileSync(process.argv[2])),makers={H2:h2Adapter,H3:h3Adapter},result={};
+for(const[name,make]of Object.entries(makers)){const p=models[name],w=new LiveWorld(make(p));w.step(.25,4);let err=0;for(let q=0;q<w.re.length;q++)err=Math.max(err,Math.abs(w.re[q]-p.reference_re[q]),Math.abs(w.im[q]-p.reference_im[q]));const fork=w.fork();fork.apply(make(p).kick);fork.step(.25,2);w.step(.25,2);result[name]={max_4step_Python_JS_error:err,observation:w.observe(),fork_comparison:w.compare(fork),export_has_state:fork.export_evidence().re.length===w.re.length,pass:err<1e-10};if(err>=1e-10)throw Error(name+' numerical browser-core parity failure');}
+result.visual_rendering='NOT_RUN; numerical engine checks are not browser visual QA';fs.writeFileSync(process.argv[3],JSON.stringify(result,null,2));

@@ -1,0 +1,14 @@
+{
+ "id":"QW-CORE02-20261017",
+ "model_scope":"same grid-wavefunction runtime, H3 LSTH FFT2 and independent H2 J0 BO radial sine-DVR",
+ "history":"Core01 frozen commit35f38df preserved; only archived3-step regression, not full original experiments",
+ "science_resources":{"jobs":1,"attempts":1,"cpu":1,"threads":1,"memory_GiB":1,"job_minutes":15,"science_network":"none","swap":0,"new_purchases":0},
+ "initial_inputs":"requests.json, chosen through the allowed adapter schema, not a table of answers",
+ "classification":"PROGRAMMATIC_EXPERIMENT; no AUTONOMOUS_DISCOVERY claim",
+ "numerical_checks":{"closed_norm_max_error":1e-9,"probability_balance_error":1e-9,"energy_drift_Eh":1e-6,"H3_archived_state_max_error":1e-11,"browser_core_state_max_error":1e-10,"H2_dt_meanR_tolerance_bohr":0.001,"H2_grid_meanR_tolerance_bohr":0.01},
+ "physical_reference":{"PES":"Pachucki PRA82 032509 table4","independent_BO_v01_cm_inverse":4163.40350,"experiment_v01_cm_inverse":4161.16632,"source":"Dickenson etal PRL110193601 table2 https://arxiv.org/html/1304.6390","accuracy_policy":"report discrepancy/interpolation sensitivity; no precision-spectroscopy PASS inferred"},
+ "H2_boundary":"reduced radial u(R), Dirichlet at positive truncated interval endpoints; extended box sensitivity checked; no FFT wrap",
+ "claims_not_supported":["arbitrary density matrices","real-time many-electron dynamics","quantum fields","universal propagator","full3D H3 reaction rates","precision molecular spectra","new physical discovery"],
+ "publication_authority":"Human directly submitted Core02 work package: independent branch in existing public Core01 repo, audited non-sensitive code/reference/results only, one free execution",
+ "stop":"complete evidence and handoff; no Core03 or automatic rerun"
+}
